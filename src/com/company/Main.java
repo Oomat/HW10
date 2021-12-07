@@ -4,11 +4,11 @@ public class Main {
 
 
     public static void main(String[] args) {
-Printable[] Car = {createObject("Benz"), createObject("BMW"),createObject("Audi"),createObject("Toyota")};
-        for (int i = 0; i < Car.length; i++) {
-            Car[i].print();
+            Printable[] Car = {createObject("Benz"), createObject("BMW"),createObject("Audi"),createObject("Toyota")};
+            for (int i = 0; i < Car.length; i++) {
+                Car[i].print();
+            }
         }
-    }
 
     public static Printable createObject(String Car) {
         Printable printable = null;
@@ -16,7 +16,7 @@ Printable[] Car = {createObject("Benz"), createObject("BMW"),createObject("Audi"
             case "Benz":
                 printable = new Benz();
                 break;
-            case "BMW ":
+            case "BMW":
                 printable = new BMW();
                 break;
             case "Audi":
@@ -27,7 +27,6 @@ Printable[] Car = {createObject("Benz"), createObject("BMW"),createObject("Audi"
                 break;
         }
         return printable;
-
 
     }
 }
